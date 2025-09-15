@@ -1,5 +1,1 @@
-# Assignment 02 - Data Visualization
-
-This folder contains the R script and documentation for Assignment 02.
-- `Assignment_02.R`: Main R script for data visualization tasks.
-- `README.md`: Overview and instructions for this assignment.
+Blog link: https://haozhong35.blogspot.com/2025/09/module-2-assignment-importing-data-and.html
