@@ -1,4 +1,4 @@
-r-programming-assignments
-Name:Hao Zhong
-Course Number: Lis4370
-Repository for R Programming Assignments
+# r-programming-assignments
+# Name:Hao Zhong
+# Course Number: Lis4317
+# Repository for R Programming Assignments
