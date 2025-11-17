@@ -1,0 +1,43 @@
+---
+title: "My first R markdown"
+output: html_document
+date: "2025-11-17"
+---
+
+
+# 1. Introduction
+
+In this assignment, I am practicing the basic authoring workflow of *R Markdown*.  
+This document combines narrative text, executable R code, and LaTeX math formulas in a single file.  
+By knitting this `.Rmd` file to HTML, I can clearly see the relationship between the source file and the rendered output.
+
+R Markdown supports *reproducible analysis*: every time I knit this document, all code chunks are re-executed, so the results always match the code in the file.
+
+# 2. R code chunks
+
+```{r setup, message=FALSE, warning=FALSE}
+library(ggplot2)
+
+# First check the dataset structure
+str(mtcars)
+
+# then summary statistics
+summary(mtcars$mpg)
+mean_mpg <- mean(mtcars$mpg)
+mean_mpg
+```
+
+# Generate a plot
+```{r}
+# generate a barplot
+ggplot(mtcars, aes(x = factor(cyl))) +
+  geom_bar() +
+  labs(title = "count of Cars by Number of Cylinders",
+       x = "Number of Cylinders",
+       y = "Cars Number")
+```
+
+
+# Reflection
+```{r}
+#This is my first time using R Markdown, and at first I wasn't sure how everything worked, especially the mixture of text, code, and math in one file. After trying it out, I realized that it was actually very convenient because when you weave the document, the code runs automatically and the results are displayed directly below the block, which helps me understand what happened. I do feel a bit confused about YAML header and code block formats, but once I looked at a few examples, it started to make more sense. I also found that the mentor of my other course used the 'r markdown' format when assigning homework.
